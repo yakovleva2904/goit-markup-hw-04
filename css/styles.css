@@ -390,7 +390,7 @@ img {
     display: flex;
     margin-top: 50px;
 }
-.clients-item {
+.clients-item-link {
     color: #AFB1B8;
     display: flex;
     justify-content: center;
@@ -399,11 +399,14 @@ img {
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    margin-right: 30px;
 }
-.clients-item:hover {
+.clients-item-link:hover,
+.clients-item-link:focus {
     color: var(--secondary-color);
-    border: 1px solid var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+.clients-item {
+    margin-right: 30px;
 }
 .clients-item:last-child {
     margin-right: 0;
